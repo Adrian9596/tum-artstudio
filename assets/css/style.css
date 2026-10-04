@@ -119,19 +119,12 @@ p { margin: 0 0 1em; }
 
 .site-header { text-align: center; padding-top: 40px; }
 
-.site-title {
-  margin: 0;
-  font-size: clamp(26px, 4.4vw, 40px);
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  padding-left: 0.24em; /* bù khoảng cách chữ để chữ nằm giữa */
-}
-.site-title a { color: var(--heading); text-decoration: none; }
+.site-title { margin: 0; line-height: 0; }
+.site-title a { display: inline-block; }
+.site-title img { width: 240px; height: auto; }
 
 .tagline {
-  margin: 6px 0 0;
+  margin: 14px 0 0;
   font-size: 17px;
   font-style: italic;
   color: var(--muted);
@@ -171,6 +164,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 900px) {
   .topbar { display: none; }
   .site-header { padding-top: 28px; padding-bottom: 8px; }
+  .site-title img { width: 184px; }
 
   .menu-toggle {
     display: inline-flex;
@@ -669,13 +663,8 @@ p { margin: 0 0 1em; }
 }
 .site-footer a { color: var(--text); text-decoration: none; }
 .site-footer a:hover { color: var(--ink); text-decoration: underline; }
-.footer-title {
-  margin: 0 0 8px;
-  font-size: 15px;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--heading);
-}
+.footer-logo { margin: 0 0 12px; line-height: 0; }
+.footer-logo img { width: 128px; height: auto; margin: 0 auto; }
 .site-footer .social {
   justify-content: center;
   margin: 18px 0;

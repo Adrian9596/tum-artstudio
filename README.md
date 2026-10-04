@@ -11,6 +11,7 @@ Xem trực tuyến: https://adrian9596.github.io/tum-artstudio/
 - `assets/css/style.css`: giao diện (màu, chữ, bố cục)
 - `assets/js/main.js`: slideshow, xem ảnh lớn, menu trên điện thoại
 - `assets/img/`: ảnh đã nén cho web (`*-t.jpg` là bản thu nhỏ)
+- `assets/img/logo/`: logo vector (`tum-logo.svg` đầy đủ, `tum-monogram.svg` chỉ chữ TUM, `tum-favicon.svg` cho tab trình duyệt; màu #926C37) và các icon PNG
 
 ## Việc cần làm trước khi công bố chính thức
 
