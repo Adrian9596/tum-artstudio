@@ -7,6 +7,7 @@
   <meta name="description" content="Câu chuyện của Tưm: 8 năm trên hành trình hội hoạ và một studio nhỏ dành cho tranh, workshop và lớp học vẽ.">
   <!-- TẠM: ẩn khỏi Google khi đang duyệt — xoá dòng dưới khi công bố chính thức -->
   <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#FAF6F0">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="vi_VN">
   <meta property="og:site_name" content="TUM.Artstudio">
@@ -20,100 +21,180 @@
   <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&amp;family=EB+Garamond:ital,wght@0,500;1,500&amp;display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
-  <noscript><style>.menu-toggle{display:none!important}.main-nav{display:block!important;position:static!important;padding:0!important}.nav-list{flex-direction:row!important}</style></noscript>
+  <noscript><style>.menu-toggle{display:none!important}.main-nav{display:block!important;position:static!important;inset:auto!important;padding:0!important;background:none!important;overflow:visible!important;width:auto!important}.nav-top,.nav-extra{display:none!important}.nav-list{display:flex!important;flex-wrap:wrap!important;margin:0!important}.nav-list li{border:0!important}.nav-list a{min-height:44px!important;font:500 15px/1.4 "Be Vietnam Pro",sans-serif!important;padding:10px!important}.nav-list a::after{display:none!important}@media (max-width:959px){.site-header{position:relative!important}.header-bar{flex-wrap:wrap!important;padding-bottom:6px}.main-nav{order:3;width:100%!important}}</style></noscript>
 </head>
 <body>
 <a class="skip-link" href="#main">Bỏ qua, tới nội dung chính</a>
 
-<div class="topbar">
-  <div class="container">
-    <span>Trích Sài · Tây Hồ · Hà Nội</span>
-    <ul class="social"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener">Instagram</a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener">Facebook</a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener">Zalo</a></li></ul>
+<header class="site-header" data-header>
+  <div class="container header-bar">
+    <p class="brand"><a href="index.html"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio"></a></p>
+    <nav class="main-nav" id="site-nav" aria-label="Menu chính">
+      <div class="nav-top">
+        <img class="nav-logo" src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="">
+        <button class="nav-close" type="button" aria-label="Đóng menu"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <ul class="nav-list">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="tranh.html">Tranh</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="khoa-hoc.html">Khoá học</a></li>
+          <li><a href="doi-tac.html">Đối tác</a></li>
+          <li><a href="ve-tum.html" aria-current="page">Về Tưm</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-extra">
+        <p class="nav-extra-title">Trích Sài · Tây Hồ · Hà Nội</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="tel:+84353297868"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.5 4.1-1.9 1.3a11.5 11.5 0 0 0 6.3 6.3l1.3-1.9 4.1 1.5v2.6a1.8 1.8 0 0 1-1.9 1.8A16.2 16.2 0 0 1 4.8 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><span>Gọi 0353 297 868</span></a>
+          <a class="btn btn--ghost" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Nhắn Zalo</span></a>
+        </div>
+        <ul class="social social--nav"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener"><span>Instagram</span></a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener"><span>Facebook</span></a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener"><span>TikTok</span></a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener"><span>Zalo</span></a></li></ul>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--primary btn--sm header-zalo" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span><span class="hide-xs">Nhắn </span>Zalo</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span>Menu</button>
+    </div>
   </div>
-</div>
-
-<header class="site-header">
-  <div class="container">
-    <p class="site-title"><a href="index.html"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio"></a></p>
-    <p class="tagline">Tranh · Workshop · Lớp học vẽ</p>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span>Menu</button>
-  </div>
-  <nav class="main-nav" id="site-nav" aria-label="Menu chính">
-    <button class="nav-close" type="button" aria-label="Đóng menu"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
-    <ul class="nav-list">
-        <li><a href="index.html">Trang chủ</a></li>
-        <li><a href="tranh.html">Tranh</a></li>
-        <li><a href="workshop.html">Workshop</a></li>
-        <li><a href="khoa-hoc.html">Khoá học</a></li>
-        <li><a href="doi-tac.html">Đối tác</a></li>
-        <li><a href="ve-tum.html" aria-current="page">Về Tưm</a></li>
-        <li><a href="lien-he.html">Liên hệ</a></li>
-    </ul>
-    <ul class="social social--nav"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener">Instagram</a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener">Facebook</a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener">Zalo</a></li></ul>
-  </nav>
 </header>
 
 <main id="main">
-<header class="page-head container">
-  <h1 class="page-title">Về Tưm</h1>
-  <p class="page-sub">Một hành trình bắt đầu từ tình yêu dành cho hội hoạ</p>
-  <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1"/></svg>
-</header>
+<section class="page-head">
+  <div class="container page-head-grid">
+    <div class="page-head-copy">
+      <p class="label">Câu chuyện</p>
+      <h1 class="page-title">Về Tưm</h1>
+      <p class="page-sub">Một hành trình bắt đầu từ tình yêu dành cho hội hoạ</p>
+      <div class="page-intro"><p class="hello">Chào bạn, mình là Tưm.</p><p>Có những điều bắt đầu từ một niềm yêu thích rất nhỏ, rồi theo thời gian trở thành một phần không thể thiếu trong cuộc sống.</p></div>
+      
+    </div>
+    <figure class="head-media">
+      <div class="arch head-arch"><img src="assets/img/studio/studio-0260-t.jpg" srcset="assets/img/studio/studio-0260-t.jpg 760w, assets/img/studio/studio-0260.jpg 1200w" sizes="(max-width: 900px) 62vw, 400px" width="760" height="1013" alt="Không gian studio với đèn giấy và những bức tranh treo tường" fetchpriority="high" decoding="async"></div>
+      <figcaption class="head-cap">Một góc studio của Tưm</figcaption>
+    </figure>
+  </div>
+</section>
 
-<article class="section section--tight story">
-  <div class="container prose">
-    <p class="lead">Chào bạn, mình là Tưm.</p>
-    <p>Có những điều bắt đầu từ một niềm yêu thích rất nhỏ, rồi theo thời gian trở thành một phần không thể thiếu trong cuộc sống.</p>
-    <p>Với Tưm, đó là hội hoạ.</p>
-    <p>Tám năm trước, Tưm bắt đầu bước vào hành trình ấy — vừa học Thiết kế Đồ hoạ, vừa nghiêm túc tìm hiểu và theo đuổi hội hoạ truyền thống. Càng đi sâu, Tưm càng nhận ra rằng hội hoạ không chỉ là những đường nét, màu sắc hay một bức tranh hoàn chỉnh. Đó còn là cách chúng ta quan sát thế giới, lắng nghe chính mình và lưu giữ những cảm xúc đôi khi rất khó gọi thành tên.</p>
+<article class="story">
+  <section class="section story-intro">
+    <div class="container story-intro-grid">
+      <div class="prose">
+        <p class="story-accent">Với Tưm, đó là hội hoạ.</p>
+        <p>Tám năm trước, Tưm bắt đầu bước vào hành trình ấy — vừa học Thiết kế Đồ hoạ, vừa nghiêm túc tìm hiểu và theo đuổi hội hoạ truyền thống. Càng đi sâu, Tưm càng nhận ra rằng hội hoạ không chỉ là những đường nét, màu sắc hay một bức tranh hoàn chỉnh. Đó còn là cách chúng ta quan sát thế giới, lắng nghe chính mình và lưu giữ những cảm xúc đôi khi rất khó gọi thành tên.</p>
+      </div>
+      <aside class="facts" aria-label="Vài con số">
+        <ul class="stats stats--stack">
+          <li><b>8 năm</b> theo đuổi hội hoạ</li>
+          <li><b>3 năm</b> hoạt động studio</li>
+          <li><b>Giáo viên</b> tốt nghiệp ngành Mỹ thuật</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
 
-    <figure class="figure"><img src="assets/img/studio/studio-0260-t.jpg" srcset="assets/img/studio/studio-0260-t.jpg 760w, assets/img/studio/studio-0260.jpg 1200w" sizes="(max-width: 600px) 100vw, 560px" width="760" height="1013" alt="Không gian studio với đèn giấy và những bức tranh treo tường" loading="lazy" decoding="async"><figcaption>Một góc studio của Tưm</figcaption></figure>
+  <section class="section band chapter">
+    <div class="container chapter-grid">
+      <div class="chapter-media"><div class="arch"><img src="assets/img/studio/studio-8311-t.jpg" srcset="assets/img/studio/studio-8311-t.jpg 760w, assets/img/studio/studio-8311.jpg 1200w" sizes="(max-width: 900px) 86vw, 470px" width="760" height="1013" alt="Học viên vẽ bức tranh hàng cây xanh trên giá vẽ lớn" loading="lazy" decoding="async"></div></div>
+      <div class="prose">
+        <p class="label">Chương 1</p>
+        <h2 class="h2">Từ một studio nhỏ</h2>
+        <p>Tưm bắt đầu xây dựng studio của riêng mình.</p>
+        <p>Một nơi để vẽ. Một nơi để làm việc. Và cũng là nơi Tưm có thể tự do theo đuổi những điều mình yêu thích. Trong những năm ấy, studio có nhiều hoạt động khác nhau — từ tranh, workshop trải nghiệm đến các lớp học mỹ thuật. Mỗi công việc mang đến một niềm vui riêng, gặp gỡ những con người khác nhau và mở ra những câu chuyện mới.</p>
+        <p>Nhưng càng làm, Tưm càng nhận ra một điều:</p>
+        <p class="pull">Nghệ thuật không chỉ nằm trong những bức tranh. Nó còn nằm trong những khoảnh khắc chúng ta tạo ra cùng nhau.</p>
+        <p>Có lẽ, đó cũng là lý do Tưm muốn nơi này trở thành nhiều hơn một studio.</p>
+      </div>
+    </div>
+  </section>
 
-    <h2 class="h-sub">Từ một studio nhỏ</h2>
-    <p>Tưm bắt đầu xây dựng studio của riêng mình.</p>
-    <p>Một nơi để vẽ. Một nơi để làm việc. Và cũng là nơi Tưm có thể tự do theo đuổi những điều mình yêu thích. Trong những năm ấy, studio có nhiều hoạt động khác nhau — từ tranh, workshop trải nghiệm đến các lớp học mỹ thuật. Mỗi công việc mang đến một niềm vui riêng, gặp gỡ những con người khác nhau và mở ra những câu chuyện mới.</p>
-    <p>Nhưng càng làm, Tưm càng nhận ra một điều:</p>
-    <p class="pull">Nghệ thuật không chỉ nằm trong những bức tranh. Nó còn nằm trong những khoảnh khắc chúng ta tạo ra cùng nhau.</p>
-    <p>Có lẽ, đó cũng là lý do Tưm muốn nơi này trở thành nhiều hơn một studio.</p>
+  <section class="section chapter">
+    <div class="container chapter-grid chapter-grid--rev">
+      <figure class="chapter-media"><div class="arch"><img src="assets/img/studio/studio-7462-t.jpg" srcset="assets/img/studio/studio-7462-t.jpg 760w, assets/img/studio/studio-7462.jpg 1200w" sizes="(max-width: 900px) 86vw, 470px" width="760" height="1013" alt="Học viên ngắm bức tranh vừa vẽ bên khung cửa sổ" loading="lazy" decoding="async"></div><figcaption>Những phút chậm lại bên khung cửa sổ</figcaption></figure>
+      <div class="prose">
+        <p class="label">Chương 2</p>
+        <h2 class="h2">Một không gian dành cho nghệ thuật</h2>
+        <p>Tưm mong đây sẽ là một góc nhỏ đủ bình yên để bạn có thể chậm lại một chút giữa những ngày vội vã. Có thể bạn đến để tìm một bức tranh cho căn nhà của mình. Có thể bạn đến để học vẽ, dù trước đây chưa từng nghĩ mình là người có năng khiếu. Có thể bạn chỉ muốn ngồi xuống, cầm một cây cọ và thử vẽ một điều gì đó bằng chính đôi tay mình.</p>
+        <p>Ở đây, không nhất thiết phải có một bức tranh thật hoàn hảo. Đôi khi, điều đáng nhớ nhất lại là khoảng thời gian bạn đã dành cho chính mình trong lúc tạo nên nó.</p>
+      </div>
+    </div>
+  </section>
 
-    <h2 class="h-sub">Một không gian dành cho nghệ thuật</h2>
-    <p>Tưm mong đây sẽ là một góc nhỏ đủ bình yên để bạn có thể chậm lại một chút giữa những ngày vội vã. Có thể bạn đến để tìm một bức tranh cho căn nhà của mình. Có thể bạn đến để học vẽ, dù trước đây chưa từng nghĩ mình là người có năng khiếu. Có thể bạn chỉ muốn ngồi xuống, cầm một cây cọ và thử vẽ một điều gì đó bằng chính đôi tay mình.</p>
-    <p>Ở đây, không nhất thiết phải có một bức tranh thật hoàn hảo. Đôi khi, điều đáng nhớ nhất lại là khoảng thời gian bạn đã dành cho chính mình trong lúc tạo nên nó.</p>
+  <section class="section band chapter">
+    <div class="container chapter-grid">
+      <div class="chapter-media"><div class="arch"><img src="assets/img/studio/studio-6629-t.jpg" srcset="assets/img/studio/studio-6629-t.jpg 760w, assets/img/studio/studio-6629.jpg 1200w" sizes="(max-width: 900px) 86vw, 470px" width="760" height="1013" alt="Giáo viên hướng dẫn học viên trong buổi workshop" loading="lazy" decoding="async"></div></div>
+      <div class="prose">
+        <p class="label">Chương 3</p>
+        <h2 class="h2">Những người cùng Tưm kể câu chuyện này</h2>
+        <p>Tưm may mắn có những người bạn đồng hành cùng chung tình yêu với nghệ thuật.</p>
+        <p>Đội ngũ giáo viên tại đây đều được đào tạo bài bản, tốt nghiệp ngành Mỹ thuật và có kinh nghiệm giảng dạy. Nhưng bên cạnh chuyên môn, Tưm cũng trân trọng sự trẻ trung, cởi mở và nguồn năng lượng mà mỗi người mang đến cho lớp học. Bởi Tưm tin rằng, một lớp học mỹ thuật tốt không chỉ giúp bạn biết thêm một kỹ thuật mới, mà còn khiến bạn cảm thấy đủ thoải mái để thử, để sai, để khám phá và để tìm thấy cách biểu đạt của riêng mình.</p>
+      </div>
+    </div>
+  </section>
 
-    <figure class="figure"><img src="assets/img/studio/studio-7462-t.jpg" srcset="assets/img/studio/studio-7462-t.jpg 760w, assets/img/studio/studio-7462.jpg 1200w" sizes="(max-width: 600px) 100vw, 560px" width="760" height="1013" alt="Học viên ngắm bức tranh vừa vẽ bên khung cửa sổ" loading="lazy" decoding="async"><figcaption>Những phút chậm lại bên khung cửa sổ</figcaption></figure>
-
-    <h2 class="h-sub">Những người cùng Tưm kể câu chuyện này</h2>
-    <p>Tưm may mắn có những người bạn đồng hành cùng chung tình yêu với nghệ thuật.</p>
-    <p>Đội ngũ giáo viên tại đây đều được đào tạo bài bản, tốt nghiệp ngành Mỹ thuật và có kinh nghiệm giảng dạy. Nhưng bên cạnh chuyên môn, Tưm cũng trân trọng sự trẻ trung, cởi mở và nguồn năng lượng mà mỗi người mang đến cho lớp học. Bởi Tưm tin rằng, một lớp học mỹ thuật tốt không chỉ giúp bạn biết thêm một kỹ thuật mới, mà còn khiến bạn cảm thấy đủ thoải mái để thử, để sai, để khám phá và để tìm thấy cách biểu đạt của riêng mình.</p>
-
-    <div class="closing">
+  <section class="section closing-section">
+    <div class="container closing">
+      <img class="closing-mark" src="assets/img/logo/tum-monogram.svg" width="626" height="313" alt="" loading="lazy" decoding="async">
       <strong>Chào mừng bạn đến với TUM.Artstudio</strong>
       <p>Một góc nhỏ dành cho tranh, cho nghệ thuật, và cho những khoảng thời gian bạn được là chính mình.</p>
     </div>
-  </div>
+  </section>
 </article>
 
-<section class="section section--line cta">
-  <div class="container">
-    <h2 class="h-section">Ghé thăm Tưm</h2>
-    <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1"/></svg>
-    <p>Hẹn ghé studio, đặt lịch workshop hay đăng ký khoá học — cứ nhắn cho Tưm nhé.</p>
-    <div class="btn-row">
-      <a class="btn btn--solid" href="tel:+84353297868">Gọi 0353 297 868</a>
-      <a class="btn" href="https://zalo.me/0353297868" target="_blank" rel="noopener">Nhắn Zalo</a>
+<section class="cta-band" aria-labelledby="cta-title">
+  <div class="container cta-grid">
+    <div class="cta-copy">
+      <p class="label label--light">Liên hệ với Tưm</p>
+      <h2 class="cta-title" id="cta-title">Ghé thăm Tưm</h2>
+      <p class="cta-text">Hẹn ghé studio, đặt lịch workshop hay đăng ký khoá học — cứ nhắn cho Tưm nhé.</p>
+      <div class="btn-row">
+        <a class="btn btn--light btn--lg" href="tel:+84353297868"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.5 4.1-1.9 1.3a11.5 11.5 0 0 0 6.3 6.3l1.3-1.9 4.1 1.5v2.6a1.8 1.8 0 0 1-1.9 1.8A16.2 16.2 0 0 1 4.8 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><span>Gọi 0353 297 868</span></a>
+        <a class="btn btn--outline-light btn--lg" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Nhắn Zalo</span></a>
+      </div>
+    </div>
+    <div class="cta-media" aria-hidden="true">
+      <div class="arch cta-arch"><img src="assets/img/studio/studio-5119-t.jpg" srcset="assets/img/studio/studio-5119-t.jpg 760w, assets/img/studio/studio-5119.jpg 1200w" sizes="(max-width: 900px) 40vw, 320px" width="760" height="1013" alt="" loading="lazy" decoding="async" style="object-position:50% 35%"></div>
     </div>
   </div>
 </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p class="footer-logo"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio" loading="lazy" decoding="async"></p>
-    <p>Trích Sài, Tây Hồ, Hà Nội · <a href="tel:+84353297868">0353 297 868</a> · <a href="mailto:tumbuiartist@gmail.com">tumbuiartist@gmail.com</a></p>
-    <ul class="social"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener">Instagram</a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener">Facebook</a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener">Zalo</a></li></ul>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="footer-logo" href="index.html"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio" loading="lazy" decoding="async"></a>
+      <p class="footer-tagline">Tranh · Workshop · Lớp học vẽ</p>
+      <p class="footer-addr"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.7-6.5-11a6.5 6.5 0 0 1 13 0c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Trích Sài, Tây Hồ, Hà Nội</span></p>
+    </div>
+    <div class="footer-col footer-col--nav">
+      <p class="footer-title">Khám phá</p>
+      <ul class="footer-links footer-links--2">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="tranh.html">Tranh</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="khoa-hoc.html">Khoá học</a></li>
+          <li><a href="doi-tac.html">Đối tác</a></li>
+          <li><a href="ve-tum.html">Về Tưm</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-col--contact">
+      <p class="footer-title">Liên hệ</p>
+      <ul class="footer-links">
+        <li><a href="tel:+84353297868"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.5 4.1-1.9 1.3a11.5 11.5 0 0 0 6.3 6.3l1.3-1.9 4.1 1.5v2.6a1.8 1.8 0 0 1-1.9 1.8A16.2 16.2 0 0 1 4.8 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><span>0353 297 868</span></a></li>
+        <li><a href="mailto:tumbuiartist@gmail.com"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7.5 7.5 5.5 7.5-5.5"/></svg><span>tumbuiartist@gmail.com</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-col--social">
+      <p class="footer-title">Theo dõi Tưm</p>
+      <ul class="social social--footer"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.8" cy="7.2" r=".9" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 20v-7h2.4l.4-2.8h-2.8V8.6c0-.8.3-1.4 1.4-1.4h1.5V4.7c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7v1.9h-2.4V13h2.4v7"/></svg><span>Facebook</span></a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 4v10.5a3 3 0 1 1-3-3"/><path d="M13.5 4c.3 2.3 1.9 3.9 4.5 4.1"/></svg><span>TikTok</span></a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Zalo</span></a></li></ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
     <p class="copy">© <span data-year>2026</span> TUM.Artstudio</p>
+    <p class="footer-top"><a href="#main">Lên đầu trang <svg class="icon icon--up" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6.5 13.5 12 19l5.5-5.5"/></svg></a></p>
   </div>
 </footer>
 

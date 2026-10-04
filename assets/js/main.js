@@ -1,4 +1,4 @@
-/* TUM.Artstudio — menu điện thoại, slideshow trang chủ, xem ảnh lớn (lightbox).
+/* TUM.Artstudio — header dính, menu điện thoại, slideshow (nếu có), xem ảnh lớn (lightbox).
    Không dùng thư viện ngoài. Khi tắt JavaScript, trang vẫn đọc và bấm link được. */
 (function () {
   'use strict';
@@ -14,12 +14,29 @@
     el.textContent = new Date().getFullYear();
   });
 
+  /* ---------- Header: thêm bóng nhẹ khi cuộn xuống ---------- */
+  var header = document.querySelector('[data-header]');
+  if (header) {
+    var ticking = false;
+    var onScroll = function () {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        header.classList.toggle('is-scrolled', window.scrollY > 8);
+        ticking = false;
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
   /* ---------- Menu trên điện thoại ---------- */
   var toggle = document.querySelector('.menu-toggle');
   var nav = document.getElementById('site-nav');
 
   if (toggle && nav) {
     var navClose = nav.querySelector('.nav-close');
+    var isOpen = function () { return document.body.classList.contains('nav-open'); };
 
     var setNav = function (open) {
       document.body.classList.toggle('nav-open', open);
@@ -33,16 +50,42 @@
       }
     };
 
-    toggle.addEventListener('click', function () {
-      setNav(!document.body.classList.contains('nav-open'));
-    });
+    toggle.addEventListener('click', function () { setNav(!isOpen()); });
     if (navClose) navClose.addEventListener('click', function () { setNav(false); });
+
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && document.body.classList.contains('nav-open')) setNav(false);
+      if (!isOpen()) return;
+      if (e.key === 'Escape') {
+        setNav(false);
+      } else if (e.key === 'Tab') {
+        // Giữ phím Tab trong menu khi menu đang mở
+        var items = Array.prototype.slice.call(nav.querySelectorAll('a[href], button'))
+          .filter(function (el) { return el.offsetParent !== null; });
+        if (!items.length) return;
+        var firstEl = items[0], lastEl = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === firstEl) { e.preventDefault(); lastEl.focus(); }
+        else if (!e.shiftKey && document.activeElement === lastEl) { e.preventDefault(); firstEl.focus(); }
+      }
+    });
+
+    // Bấm một link trong menu (kể cả link neo cùng trang) thì đóng menu
+    nav.addEventListener('click', function (e) {
+      if (isOpen() && e.target.closest('a[href]')) {
+        document.body.classList.remove('nav-open', 'no-scroll');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Xoay ngang / phóng to màn hình sang bố cục máy tính thì bỏ trạng thái mở
+    window.matchMedia('(min-width: 960px)').addEventListener('change', function (mq) {
+      if (mq.matches && isOpen()) {
+        document.body.classList.remove('nav-open', 'no-scroll');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
-  /* ---------- Slideshow ---------- */
+  /* ---------- Slideshow (giữ cho trường hợp trang có dùng) ---------- */
   document.querySelectorAll('[data-slideshow]').forEach(function (root) {
     var slides = Array.prototype.slice.call(root.querySelectorAll('.slide'));
     if (slides.length < 2) return;
@@ -54,7 +97,6 @@
     var current = 0;
     var timer = null;
 
-    // Ảnh của các slide sau được tải bản lớn khi sắp tới lượt hiện
     var loadFull = function (slide) {
       var img = slide.querySelector('img[data-full]');
       if (!img) return;
@@ -83,10 +125,7 @@
       dots[current].setAttribute('aria-current', 'true');
       loadFull(slides[(current + 1) % slides.length]);
     }
-
-    function stop() {
-      if (timer) { clearInterval(timer); timer = null; }
-    }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
     function start() {
       if (reduceMotion) return;
       stop();
@@ -101,7 +140,6 @@
     next.hidden = false;
     prev.addEventListener('click', function () { go(current - 1); restart(); });
     next.addEventListener('click', function () { go(current + 1); restart(); });
-
     root.addEventListener('mouseenter', stop);
     root.addEventListener('mouseleave', start);
     root.addEventListener('focusin', stop);
@@ -110,7 +148,6 @@
       if (e.key === 'ArrowLeft') { go(current - 1); }
       if (e.key === 'ArrowRight') { go(current + 1); }
     });
-
     var x0 = null;
     root.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; stop(); }, { passive: true });
     root.addEventListener('touchend', function (e) {
@@ -120,11 +157,9 @@
       x0 = null;
       start();
     });
-
     document.addEventListener('visibilitychange', function () {
       if (document.hidden) { stop(); } else { start(); }
     });
-
     loadFull(slides[1]);
     start();
   });

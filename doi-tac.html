@@ -7,6 +7,7 @@
   <meta name="description" content="Workshop vẽ tranh cuối tuần cùng các tiệm cafe đối tác: Kohi.kafie (Nam Định) và Um.art (Bắc Ninh).">
   <!-- TẠM: ẩn khỏi Google khi đang duyệt — xoá dòng dưới khi công bố chính thức -->
   <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#FAF6F0">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="vi_VN">
   <meta property="og:site_name" content="TUM.Artstudio">
@@ -20,99 +21,164 @@
   <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&amp;family=EB+Garamond:ital,wght@0,500;1,500&amp;display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
-  <noscript><style>.menu-toggle{display:none!important}.main-nav{display:block!important;position:static!important;padding:0!important}.nav-list{flex-direction:row!important}</style></noscript>
+  <noscript><style>.menu-toggle{display:none!important}.main-nav{display:block!important;position:static!important;inset:auto!important;padding:0!important;background:none!important;overflow:visible!important;width:auto!important}.nav-top,.nav-extra{display:none!important}.nav-list{display:flex!important;flex-wrap:wrap!important;margin:0!important}.nav-list li{border:0!important}.nav-list a{min-height:44px!important;font:500 15px/1.4 "Be Vietnam Pro",sans-serif!important;padding:10px!important}.nav-list a::after{display:none!important}@media (max-width:959px){.site-header{position:relative!important}.header-bar{flex-wrap:wrap!important;padding-bottom:6px}.main-nav{order:3;width:100%!important}}</style></noscript>
 </head>
 <body>
 <a class="skip-link" href="#main">Bỏ qua, tới nội dung chính</a>
 
-<div class="topbar">
-  <div class="container">
-    <span>Trích Sài · Tây Hồ · Hà Nội</span>
-    <ul class="social"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener">Instagram</a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener">Facebook</a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener">Zalo</a></li></ul>
+<header class="site-header" data-header>
+  <div class="container header-bar">
+    <p class="brand"><a href="index.html"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio"></a></p>
+    <nav class="main-nav" id="site-nav" aria-label="Menu chính">
+      <div class="nav-top">
+        <img class="nav-logo" src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="">
+        <button class="nav-close" type="button" aria-label="Đóng menu"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <ul class="nav-list">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="tranh.html">Tranh</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="khoa-hoc.html">Khoá học</a></li>
+          <li><a href="doi-tac.html" aria-current="page">Đối tác</a></li>
+          <li><a href="ve-tum.html">Về Tưm</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-extra">
+        <p class="nav-extra-title">Trích Sài · Tây Hồ · Hà Nội</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="tel:+84353297868"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.5 4.1-1.9 1.3a11.5 11.5 0 0 0 6.3 6.3l1.3-1.9 4.1 1.5v2.6a1.8 1.8 0 0 1-1.9 1.8A16.2 16.2 0 0 1 4.8 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><span>Gọi 0353 297 868</span></a>
+          <a class="btn btn--ghost" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Nhắn Zalo</span></a>
+        </div>
+        <ul class="social social--nav"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener"><span>Instagram</span></a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener"><span>Facebook</span></a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener"><span>TikTok</span></a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener"><span>Zalo</span></a></li></ul>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--primary btn--sm header-zalo" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span><span class="hide-xs">Nhắn </span>Zalo</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span>Menu</button>
+    </div>
   </div>
-</div>
-
-<header class="site-header">
-  <div class="container">
-    <p class="site-title"><a href="index.html"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio"></a></p>
-    <p class="tagline">Tranh · Workshop · Lớp học vẽ</p>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span>Menu</button>
-  </div>
-  <nav class="main-nav" id="site-nav" aria-label="Menu chính">
-    <button class="nav-close" type="button" aria-label="Đóng menu"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
-    <ul class="nav-list">
-        <li><a href="index.html">Trang chủ</a></li>
-        <li><a href="tranh.html">Tranh</a></li>
-        <li><a href="workshop.html">Workshop</a></li>
-        <li><a href="khoa-hoc.html">Khoá học</a></li>
-        <li><a href="doi-tac.html" aria-current="page">Đối tác</a></li>
-        <li><a href="ve-tum.html">Về Tưm</a></li>
-        <li><a href="lien-he.html">Liên hệ</a></li>
-    </ul>
-    <ul class="social social--nav"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener">Instagram</a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener">Facebook</a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener">Zalo</a></li></ul>
-  </nav>
 </header>
 
 <main id="main">
-<header class="page-head container">
-  <h1 class="page-title">Đối tác</h1>
-  <p class="page-sub">Workshop vẽ tranh thư giãn cuối tuần</p>
-  <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1"/></svg>
-  <div class="block-intro"><p>Tưm kết hợp cùng các tiệm cafe ở nhiều tỉnh, mở những buổi workshop vẽ tranh thư giãn vào dịp cuối tuần.</p></div>
-</header>
-
-<section class="block" id="kohi-kafie">
-  <div class="container">
-    <div class="block-head"><h2 class="h-section">Kohi.kafie</h2><p class="meta">Thành phố Nam Định</p><svg class="ornament" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1"/></svg></div>
-    <div class="gallery" data-gallery>
-      <a href="assets/img/doi-tac/kohi-1631.jpg" data-caption="Học viên khoe tranh biển trước quán Kohi.kafie"><img src="assets/img/doi-tac/kohi-1631-t.jpg" srcset="assets/img/doi-tac/kohi-1631-t.jpg 760w, assets/img/doi-tac/kohi-1631.jpg 1440w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="507" alt="Học viên khoe tranh biển trước quán Kohi.kafie" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/kohi-1634.jpg" data-caption="Ba bạn khoe tranh hoa vừa hoàn thành"><img src="assets/img/doi-tac/kohi-1634-t.jpg" srcset="assets/img/doi-tac/kohi-1634-t.jpg 760w, assets/img/doi-tac/kohi-1634.jpg 960w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1140" alt="Ba bạn khoe tranh hoa vừa hoàn thành" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/kohi-1633.jpg" data-caption="Buổi workshop vẽ tranh trong quán Kohi.kafie"><img src="assets/img/doi-tac/kohi-1633-t.jpg" srcset="assets/img/doi-tac/kohi-1633-t.jpg 760w, assets/img/doi-tac/kohi-1633.jpg 1440w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="507" alt="Buổi workshop vẽ tranh trong quán Kohi.kafie" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/kohi-1640.jpg" data-caption="Không gian Kohi.kafie trong buổi workshop"><img src="assets/img/doi-tac/kohi-1640-t.jpg" srcset="assets/img/doi-tac/kohi-1640-t.jpg 760w, assets/img/doi-tac/kohi-1640.jpg 960w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1140" alt="Không gian Kohi.kafie trong buổi workshop" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/kohi-1636.jpg" data-caption="Học viên vui vẻ khoe tranh trước quán"><img src="assets/img/doi-tac/kohi-1636-t.jpg" srcset="assets/img/doi-tac/kohi-1636-t.jpg 760w, assets/img/doi-tac/kohi-1636.jpg 913w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="760" alt="Học viên vui vẻ khoe tranh trước quán" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/kohi-1641.jpg" data-caption="Học viên tập trung vẽ tại Kohi.kafie"><img src="assets/img/doi-tac/kohi-1641-t.jpg" srcset="assets/img/doi-tac/kohi-1641-t.jpg 760w, assets/img/doi-tac/kohi-1641.jpg 956w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="759" alt="Học viên tập trung vẽ tại Kohi.kafie" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/kohi-1638.jpg" data-caption="Học viên hào hứng giơ cọ trong buổi workshop"><img src="assets/img/doi-tac/kohi-1638-t.jpg" srcset="assets/img/doi-tac/kohi-1638-t.jpg 760w, assets/img/doi-tac/kohi-1638.jpg 1440w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="507" alt="Học viên hào hứng giơ cọ trong buổi workshop" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/kohi-4723.jpg" data-caption="Góc cửa sổ của Kohi.kafie trong buổi workshop"><img src="assets/img/doi-tac/kohi-4723-t.jpg" srcset="assets/img/doi-tac/kohi-4723-t.jpg 760w, assets/img/doi-tac/kohi-4723.jpg 1066w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1140" alt="Góc cửa sổ của Kohi.kafie trong buổi workshop" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/kohi-1643.jpg" data-caption="Học viên khoe tranh biển trong buổi workshop"><img src="assets/img/doi-tac/kohi-1643-t.jpg" srcset="assets/img/doi-tac/kohi-1643-t.jpg 760w, assets/img/doi-tac/kohi-1643.jpg 960w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1140" alt="Học viên khoe tranh biển trong buổi workshop" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/kohi-1305.jpg" data-caption="Không gian quán bày sẵn giá vẽ trước giờ workshop"><img src="assets/img/doi-tac/kohi-1305-t.jpg" srcset="assets/img/doi-tac/kohi-1305-t.jpg 760w, assets/img/doi-tac/kohi-1305.jpg 960w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1140" alt="Không gian quán bày sẵn giá vẽ trước giờ workshop" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/kohi-6273.jpg" data-caption="Ảnh tập thể học viên trên bậc thềm Kohi.kafie"><img src="assets/img/doi-tac/kohi-6273-t.jpg" srcset="assets/img/doi-tac/kohi-6273-t.jpg 760w, assets/img/doi-tac/kohi-6273.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Ảnh tập thể học viên trên bậc thềm Kohi.kafie" loading="lazy" decoding="async"></a>
+<section class="page-head">
+  <div class="container page-head-grid">
+    <div class="page-head-copy">
+      <p class="label">Cộng tác</p>
+      <h1 class="page-title">Đối tác</h1>
+      <p class="page-sub">Workshop vẽ tranh thư giãn cuối tuần</p>
+      <div class="page-intro"><p>Tưm kết hợp cùng các tiệm cafe ở nhiều tỉnh, mở những buổi workshop vẽ tranh thư giãn vào dịp cuối tuần.</p></div>
+      <ul class="jumps"><li><a href="#kohi-kafie"><span>Kohi.kafie</span><svg class="icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6.5 13.5 12 19l5.5-5.5"/></svg></a></li><li><a href="#um-art"><span>Um.art</span><svg class="icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6.5 13.5 12 19l5.5-5.5"/></svg></a></li></ul>
+    </div>
+    <div class="head-media has-inset">
+      <div class="arch head-arch"><img src="assets/img/doi-tac/kohi-6273-t.jpg" srcset="assets/img/doi-tac/kohi-6273-t.jpg 760w, assets/img/doi-tac/kohi-6273.jpg 1200w" sizes="(max-width: 900px) 62vw, 400px" width="760" height="1013" alt="Ảnh tập thể học viên trên bậc thềm Kohi.kafie" fetchpriority="high" decoding="async" style="object-position:50% 38%"></div>
+      <div class="head-inset"><span class="inset-clip"><img src="assets/img/doi-tac/umart-1622-t.jpg" srcset="assets/img/doi-tac/umart-1622-t.jpg 760w, assets/img/doi-tac/umart-1622.jpg 1097w" sizes="(max-width: 900px) 34vw, 190px" width="760" height="1014" alt="Mẹ và bé cùng vẽ tại Um.art" loading="lazy" decoding="async" style="object-position:50% 40%"></span></div>
     </div>
   </div>
 </section>
 
-<section class="block" id="um-art">
+<section class="section split-section" id="kohi-kafie">
   <div class="container">
-    <div class="block-head"><h2 class="h-section">Um.art</h2><p class="meta">Bắc Ninh</p><svg class="ornament" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1"/></svg></div>
-    <div class="gallery gallery--4" data-gallery>
-      <a href="assets/img/doi-tac/umart-1622.jpg" data-caption="Mẹ và bé cùng vẽ tại Um.art"><img src="assets/img/doi-tac/umart-1622-t.jpg" srcset="assets/img/doi-tac/umart-1622-t.jpg 760w, assets/img/doi-tac/umart-1622.jpg 1097w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1014" alt="Mẹ và bé cùng vẽ tại Um.art" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/umart-1623.jpg" data-caption="Học viên vẽ tranh đồng cỏ hoa tại Um.art"><img src="assets/img/doi-tac/umart-1623-t.jpg" srcset="assets/img/doi-tac/umart-1623-t.jpg 760w, assets/img/doi-tac/umart-1623.jpg 1088w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1014" alt="Học viên vẽ tranh đồng cỏ hoa tại Um.art" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/umart-1627.jpg" data-caption="Không gian Um.art bày sẵn giá vẽ bên cửa kính"><img src="assets/img/doi-tac/umart-1627-t.jpg" srcset="assets/img/doi-tac/umart-1627-t.jpg 760w, assets/img/doi-tac/umart-1627.jpg 1086w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Không gian Um.art bày sẵn giá vẽ bên cửa kính" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doi-tac/umart-1624.jpg" data-caption="Học viên cầm bảng màu vẽ tranh cỏ hoa"><img src="assets/img/doi-tac/umart-1624-t.jpg" srcset="assets/img/doi-tac/umart-1624-t.jpg 760w, assets/img/doi-tac/umart-1624.jpg 1092w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Học viên cầm bảng màu vẽ tranh cỏ hoa" loading="lazy" decoding="async"></a>
+    <div class="split-head">
+      <div class="split-head-title">
+        <p class="label">Đối tác 01</p>
+        <h2 class="h2">Kohi.kafie</h2>
+      </div>
+      <div class="split-head-body">
+        <p class="place"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.7-6.5-11a6.5 6.5 0 0 1 13 0c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Thành phố Nam Định</span></p>
+        <div class="btn-row"><a class="btn btn--ghost" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Hỏi lịch workshop</span></a></div>
+      </div>
+    </div>
+    <div class="mosaic" data-gallery>
+      <a class="tile tile--wide" href="assets/img/doi-tac/kohi-1631.jpg" data-caption="Học viên khoe tranh biển trước quán Kohi.kafie"><img src="assets/img/doi-tac/kohi-1631-t.jpg" srcset="assets/img/doi-tac/kohi-1631-t.jpg 760w, assets/img/doi-tac/kohi-1631.jpg 1440w" sizes="(max-width: 700px) 100vw, (max-width: 1240px) 50vw, 620px" width="760" height="507" alt="Học viên khoe tranh biển trước quán Kohi.kafie" loading="lazy" decoding="async" style="object-position:50% 40%"></a>
+      <a class="tile" href="assets/img/doi-tac/kohi-1634.jpg" data-caption="Ba bạn khoe tranh hoa vừa hoàn thành"><img src="assets/img/doi-tac/kohi-1634-t.jpg" srcset="assets/img/doi-tac/kohi-1634-t.jpg 760w, assets/img/doi-tac/kohi-1634.jpg 960w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1140" alt="Ba bạn khoe tranh hoa vừa hoàn thành" loading="lazy" decoding="async" style="object-position:50% 35%"></a>
+      <a class="tile" href="assets/img/doi-tac/kohi-1636.jpg" data-caption="Học viên vui vẻ khoe tranh trước quán"><img src="assets/img/doi-tac/kohi-1636-t.jpg" srcset="assets/img/doi-tac/kohi-1636-t.jpg 760w, assets/img/doi-tac/kohi-1636.jpg 913w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="760" alt="Học viên vui vẻ khoe tranh trước quán" loading="lazy" decoding="async"></a>
+      <a class="tile" href="assets/img/doi-tac/kohi-1643.jpg" data-caption="Học viên khoe tranh biển trong buổi workshop"><img src="assets/img/doi-tac/kohi-1643-t.jpg" srcset="assets/img/doi-tac/kohi-1643-t.jpg 760w, assets/img/doi-tac/kohi-1643.jpg 960w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1140" alt="Học viên khoe tranh biển trong buổi workshop" loading="lazy" decoding="async"></a>
+      <a class="tile" href="assets/img/doi-tac/kohi-4723.jpg" data-caption="Góc cửa sổ của Kohi.kafie trong buổi workshop"><img src="assets/img/doi-tac/kohi-4723-t.jpg" srcset="assets/img/doi-tac/kohi-4723-t.jpg 760w, assets/img/doi-tac/kohi-4723.jpg 1066w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1140" alt="Góc cửa sổ của Kohi.kafie trong buổi workshop" loading="lazy" decoding="async"></a>
+      <a class="tile tile--wide" href="assets/img/doi-tac/kohi-1633.jpg" data-caption="Buổi workshop vẽ tranh trong quán Kohi.kafie"><img src="assets/img/doi-tac/kohi-1633-t.jpg" srcset="assets/img/doi-tac/kohi-1633-t.jpg 760w, assets/img/doi-tac/kohi-1633.jpg 1440w" sizes="(max-width: 700px) 100vw, (max-width: 1240px) 50vw, 620px" width="760" height="507" alt="Buổi workshop vẽ tranh trong quán Kohi.kafie" loading="lazy" decoding="async" style="object-position:50% 50%"><span class="more" aria-hidden="true">+5 ảnh</span><span class="visually-hidden"> (xem thêm 5 ảnh)</span></a>
+      <a href="assets/img/doi-tac/kohi-1640.jpg" data-alt="Không gian Kohi.kafie trong buổi workshop" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/doi-tac/kohi-1641.jpg" data-alt="Học viên tập trung vẽ tại Kohi.kafie" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/doi-tac/kohi-1638.jpg" data-alt="Học viên hào hứng giơ cọ trong buổi workshop" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/doi-tac/kohi-1305.jpg" data-alt="Không gian quán bày sẵn giá vẽ trước giờ workshop" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/doi-tac/kohi-6273.jpg" data-alt="Ảnh tập thể học viên trên bậc thềm Kohi.kafie" hidden tabindex="-1" aria-hidden="true"></a>
     </div>
   </div>
 </section>
 
-<section class="section section--line cta">
+<section class="section split-section band" id="um-art">
   <div class="container">
-    <h2 class="h-section">Cùng tổ chức workshop</h2>
-    <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1"/></svg>
-    <p>Bạn có một không gian và muốn cùng Tưm mở workshop vẽ tranh? Hãy liên hệ để trao đổi nhé.</p>
-    <div class="btn-row">
-      <a class="btn btn--solid" href="tel:+84353297868">Gọi 0353 297 868</a>
-      <a class="btn" href="https://zalo.me/0353297868" target="_blank" rel="noopener">Nhắn Zalo</a>
+    <div class="split-head">
+      <div class="split-head-title">
+        <p class="label">Đối tác 02</p>
+        <h2 class="h2">Um.art</h2>
+      </div>
+      <div class="split-head-body">
+        <p class="place"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.7-6.5-11a6.5 6.5 0 0 1 13 0c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Bắc Ninh</span></p>
+        <div class="btn-row"><a class="btn btn--ghost" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Hỏi lịch workshop</span></a></div>
+      </div>
+    </div>
+    <div class="mosaic" data-gallery>
+      <a class="tile" href="assets/img/doi-tac/umart-1622.jpg" data-caption="Mẹ và bé cùng vẽ tại Um.art"><img src="assets/img/doi-tac/umart-1622-t.jpg" srcset="assets/img/doi-tac/umart-1622-t.jpg 760w, assets/img/doi-tac/umart-1622.jpg 1097w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1014" alt="Mẹ và bé cùng vẽ tại Um.art" loading="lazy" decoding="async" style="object-position:50% 40%"></a>
+      <a class="tile" href="assets/img/doi-tac/umart-1623.jpg" data-caption="Học viên vẽ tranh đồng cỏ hoa tại Um.art"><img src="assets/img/doi-tac/umart-1623-t.jpg" srcset="assets/img/doi-tac/umart-1623-t.jpg 760w, assets/img/doi-tac/umart-1623.jpg 1088w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1014" alt="Học viên vẽ tranh đồng cỏ hoa tại Um.art" loading="lazy" decoding="async"></a>
+      <a class="tile" href="assets/img/doi-tac/umart-1627.jpg" data-caption="Không gian Um.art bày sẵn giá vẽ bên cửa kính"><img src="assets/img/doi-tac/umart-1627-t.jpg" srcset="assets/img/doi-tac/umart-1627-t.jpg 760w, assets/img/doi-tac/umart-1627.jpg 1086w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1013" alt="Không gian Um.art bày sẵn giá vẽ bên cửa kính" loading="lazy" decoding="async"></a>
+      <a class="tile" href="assets/img/doi-tac/umart-1624.jpg" data-caption="Học viên cầm bảng màu vẽ tranh cỏ hoa"><img src="assets/img/doi-tac/umart-1624-t.jpg" srcset="assets/img/doi-tac/umart-1624-t.jpg 760w, assets/img/doi-tac/umart-1624.jpg 1092w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1013" alt="Học viên cầm bảng màu vẽ tranh cỏ hoa" loading="lazy" decoding="async"></a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" aria-labelledby="cta-title">
+  <div class="container cta-grid">
+    <div class="cta-copy">
+      <p class="label label--light">Liên hệ với Tưm</p>
+      <h2 class="cta-title" id="cta-title">Cùng tổ chức workshop</h2>
+      <p class="cta-text">Bạn có một không gian và muốn cùng Tưm mở workshop vẽ tranh? Hãy liên hệ để trao đổi nhé.</p>
+      <div class="btn-row">
+        <a class="btn btn--light btn--lg" href="tel:+84353297868"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.5 4.1-1.9 1.3a11.5 11.5 0 0 0 6.3 6.3l1.3-1.9 4.1 1.5v2.6a1.8 1.8 0 0 1-1.9 1.8A16.2 16.2 0 0 1 4.8 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><span>Gọi 0353 297 868</span></a>
+        <a class="btn btn--outline-light btn--lg" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Nhắn Zalo</span></a>
+      </div>
+    </div>
+    <div class="cta-media" aria-hidden="true">
+      <div class="arch cta-arch"><img src="assets/img/doi-tac/kohi-1641-t.jpg" srcset="assets/img/doi-tac/kohi-1641-t.jpg 760w, assets/img/doi-tac/kohi-1641.jpg 956w" sizes="(max-width: 900px) 40vw, 320px" width="760" height="759" alt="" loading="lazy" decoding="async" style="object-position:50% 50%"></div>
     </div>
   </div>
 </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p class="footer-logo"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio" loading="lazy" decoding="async"></p>
-    <p>Trích Sài, Tây Hồ, Hà Nội · <a href="tel:+84353297868">0353 297 868</a> · <a href="mailto:tumbuiartist@gmail.com">tumbuiartist@gmail.com</a></p>
-    <ul class="social"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener">Instagram</a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener">Facebook</a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener">Zalo</a></li></ul>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="footer-logo" href="index.html"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio" loading="lazy" decoding="async"></a>
+      <p class="footer-tagline">Tranh · Workshop · Lớp học vẽ</p>
+      <p class="footer-addr"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.7-6.5-11a6.5 6.5 0 0 1 13 0c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Trích Sài, Tây Hồ, Hà Nội</span></p>
+    </div>
+    <div class="footer-col footer-col--nav">
+      <p class="footer-title">Khám phá</p>
+      <ul class="footer-links footer-links--2">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="tranh.html">Tranh</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="khoa-hoc.html">Khoá học</a></li>
+          <li><a href="doi-tac.html">Đối tác</a></li>
+          <li><a href="ve-tum.html">Về Tưm</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-col--contact">
+      <p class="footer-title">Liên hệ</p>
+      <ul class="footer-links">
+        <li><a href="tel:+84353297868"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.5 4.1-1.9 1.3a11.5 11.5 0 0 0 6.3 6.3l1.3-1.9 4.1 1.5v2.6a1.8 1.8 0 0 1-1.9 1.8A16.2 16.2 0 0 1 4.8 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><span>0353 297 868</span></a></li>
+        <li><a href="mailto:tumbuiartist@gmail.com"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7.5 7.5 5.5 7.5-5.5"/></svg><span>tumbuiartist@gmail.com</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-col--social">
+      <p class="footer-title">Theo dõi Tưm</p>
+      <ul class="social social--footer"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.8" cy="7.2" r=".9" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 20v-7h2.4l.4-2.8h-2.8V8.6c0-.8.3-1.4 1.4-1.4h1.5V4.7c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7v1.9h-2.4V13h2.4v7"/></svg><span>Facebook</span></a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 4v10.5a3 3 0 1 1-3-3"/><path d="M13.5 4c.3 2.3 1.9 3.9 4.5 4.1"/></svg><span>TikTok</span></a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Zalo</span></a></li></ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
     <p class="copy">© <span data-year>2026</span> TUM.Artstudio</p>
+    <p class="footer-top"><a href="#main">Lên đầu trang <svg class="icon icon--up" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6.5 13.5 12 19l5.5-5.5"/></svg></a></p>
   </div>
 </footer>
 

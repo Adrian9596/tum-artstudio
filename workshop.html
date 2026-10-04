@@ -7,6 +7,7 @@
   <meta name="description" content="Workshop vẽ tranh thư giãn tại studio TUM và workshop vẽ tranh cho doanh nghiệp, sự kiện.">
   <!-- TẠM: ẩn khỏi Google khi đang duyệt — xoá dòng dưới khi công bố chính thức -->
   <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#FAF6F0">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="vi_VN">
   <meta property="og:site_name" content="TUM.Artstudio">
@@ -20,114 +21,179 @@
   <link rel="apple-touch-icon" href="assets/img/logo/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500&amp;family=EB+Garamond:ital,wght@0,500;1,500&amp;display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
-  <noscript><style>.menu-toggle{display:none!important}.main-nav{display:block!important;position:static!important;padding:0!important}.nav-list{flex-direction:row!important}</style></noscript>
+  <noscript><style>.menu-toggle{display:none!important}.main-nav{display:block!important;position:static!important;inset:auto!important;padding:0!important;background:none!important;overflow:visible!important;width:auto!important}.nav-top,.nav-extra{display:none!important}.nav-list{display:flex!important;flex-wrap:wrap!important;margin:0!important}.nav-list li{border:0!important}.nav-list a{min-height:44px!important;font:500 15px/1.4 "Be Vietnam Pro",sans-serif!important;padding:10px!important}.nav-list a::after{display:none!important}@media (max-width:959px){.site-header{position:relative!important}.header-bar{flex-wrap:wrap!important;padding-bottom:6px}.main-nav{order:3;width:100%!important}}</style></noscript>
 </head>
 <body>
 <a class="skip-link" href="#main">Bỏ qua, tới nội dung chính</a>
 
-<div class="topbar">
-  <div class="container">
-    <span>Trích Sài · Tây Hồ · Hà Nội</span>
-    <ul class="social"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener">Instagram</a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener">Facebook</a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener">Zalo</a></li></ul>
+<header class="site-header" data-header>
+  <div class="container header-bar">
+    <p class="brand"><a href="index.html"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio"></a></p>
+    <nav class="main-nav" id="site-nav" aria-label="Menu chính">
+      <div class="nav-top">
+        <img class="nav-logo" src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="">
+        <button class="nav-close" type="button" aria-label="Đóng menu"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+      <ul class="nav-list">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="tranh.html">Tranh</a></li>
+          <li><a href="workshop.html" aria-current="page">Workshop</a></li>
+          <li><a href="khoa-hoc.html">Khoá học</a></li>
+          <li><a href="doi-tac.html">Đối tác</a></li>
+          <li><a href="ve-tum.html">Về Tưm</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+      <div class="nav-extra">
+        <p class="nav-extra-title">Trích Sài · Tây Hồ · Hà Nội</p>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="tel:+84353297868"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.5 4.1-1.9 1.3a11.5 11.5 0 0 0 6.3 6.3l1.3-1.9 4.1 1.5v2.6a1.8 1.8 0 0 1-1.9 1.8A16.2 16.2 0 0 1 4.8 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><span>Gọi 0353 297 868</span></a>
+          <a class="btn btn--ghost" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Nhắn Zalo</span></a>
+        </div>
+        <ul class="social social--nav"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener"><span>Instagram</span></a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener"><span>Facebook</span></a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener"><span>TikTok</span></a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener"><span>Zalo</span></a></li></ul>
+      </div>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--primary btn--sm header-zalo" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span><span class="hide-xs">Nhắn </span>Zalo</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span>Menu</button>
+    </div>
   </div>
-</div>
-
-<header class="site-header">
-  <div class="container">
-    <p class="site-title"><a href="index.html"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio"></a></p>
-    <p class="tagline">Tranh · Workshop · Lớp học vẽ</p>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="burger" aria-hidden="true"></span>Menu</button>
-  </div>
-  <nav class="main-nav" id="site-nav" aria-label="Menu chính">
-    <button class="nav-close" type="button" aria-label="Đóng menu"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
-    <ul class="nav-list">
-        <li><a href="index.html">Trang chủ</a></li>
-        <li><a href="tranh.html">Tranh</a></li>
-        <li><a href="workshop.html" aria-current="page">Workshop</a></li>
-        <li><a href="khoa-hoc.html">Khoá học</a></li>
-        <li><a href="doi-tac.html">Đối tác</a></li>
-        <li><a href="ve-tum.html">Về Tưm</a></li>
-        <li><a href="lien-he.html">Liên hệ</a></li>
-    </ul>
-    <ul class="social social--nav"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener">Instagram</a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener">Facebook</a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener">Zalo</a></li></ul>
-  </nav>
 </header>
 
 <main id="main">
-<header class="page-head container">
-  <h1 class="page-title">Workshop</h1>
-  <p class="page-sub">Cầm cọ lên và vẽ một điều gì đó bằng chính đôi tay mình</p>
-  <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1"/></svg>
-  <ul class="subnav"><li><a href="#tai-studio">Tại studio</a></li><li><a href="#doanh-nghiep">Doanh nghiệp</a></li></ul>
-</header>
-
-<section class="block" id="tai-studio">
-  <div class="container">
-    <div class="block-head"><h2 class="h-section">Workshop vẽ tranh tại studio</h2><svg class="ornament" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1"/></svg></div>
-    <div class="block-intro"><p>Có thể bạn chỉ muốn ngồi xuống, cầm một cây cọ và thử vẽ một điều gì đó bằng chính đôi tay mình. Ở đây, không nhất thiết phải có một bức tranh thật hoàn hảo. Đôi khi, điều đáng nhớ nhất lại là khoảng thời gian bạn đã dành cho chính mình trong lúc tạo nên nó.</p></div>
-    <div class="gallery" data-gallery>
-      <a href="assets/img/studio/studio-1546.jpg" data-caption="Học viên cười rạng rỡ bên bức tranh trăng đêm vừa hoàn thành"><img src="assets/img/studio/studio-1546-t.jpg" srcset="assets/img/studio/studio-1546-t.jpg 760w, assets/img/studio/studio-1546.jpg 1087w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1119" alt="Học viên cười rạng rỡ bên bức tranh trăng đêm vừa hoàn thành" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-3747.jpg" data-caption="Học viên đang vẽ tranh bên cửa sổ studio"><img src="assets/img/studio/studio-3747-t.jpg" srcset="assets/img/studio/studio-3747-t.jpg 760w, assets/img/studio/studio-3747.jpg 1033w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1177" alt="Học viên đang vẽ tranh bên cửa sổ studio" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-5562.jpg" data-caption="Cả gia đình cùng vẽ một bức tranh lớn tại studio"><img src="assets/img/studio/studio-5562-t.jpg" srcset="assets/img/studio/studio-5562-t.jpg 760w, assets/img/studio/studio-5562.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Cả gia đình cùng vẽ một bức tranh lớn tại studio" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-2817.jpg" data-caption="Hai bạn cùng khoe tranh sau buổi workshop"><img src="assets/img/studio/studio-2817-t.jpg" srcset="assets/img/studio/studio-2817-t.jpg 760w, assets/img/studio/studio-2817.jpg 1270w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="957" alt="Hai bạn cùng khoe tranh sau buổi workshop" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-6629.jpg" data-caption="Giáo viên hướng dẫn học viên trong buổi workshop"><img src="assets/img/studio/studio-6629-t.jpg" srcset="assets/img/studio/studio-6629-t.jpg 760w, assets/img/studio/studio-6629.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Giáo viên hướng dẫn học viên trong buổi workshop" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-7462.jpg" data-caption="Học viên ngắm bức tranh vừa vẽ bên khung cửa sổ"><img src="assets/img/studio/studio-7462-t.jpg" srcset="assets/img/studio/studio-7462-t.jpg 760w, assets/img/studio/studio-7462.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Học viên ngắm bức tranh vừa vẽ bên khung cửa sổ" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-8311.jpg" data-caption="Học viên vẽ bức tranh hàng cây xanh trên giá vẽ lớn"><img src="assets/img/studio/studio-8311-t.jpg" srcset="assets/img/studio/studio-8311-t.jpg 760w, assets/img/studio/studio-8311.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Học viên vẽ bức tranh hàng cây xanh trên giá vẽ lớn" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-b4f9.jpg" data-caption="Hai học viên tạo dáng vui vẻ sau buổi workshop"><img src="assets/img/studio/studio-b4f9-t.jpg" srcset="assets/img/studio/studio-b4f9-t.jpg 760w, assets/img/studio/studio-b4f9.jpg 1067w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1139" alt="Hai học viên tạo dáng vui vẻ sau buổi workshop" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-5666.jpg" data-caption="Bàn dài workshop với nhiều học viên đang vẽ"><img src="assets/img/studio/studio-5666-t.jpg" srcset="assets/img/studio/studio-5666-t.jpg 760w, assets/img/studio/studio-5666.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Bàn dài workshop với nhiều học viên đang vẽ" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-9404.jpg" data-caption="Học viên tập trung vẽ bên cửa sổ"><img src="assets/img/studio/studio-9404-t.jpg" srcset="assets/img/studio/studio-9404-t.jpg 760w, assets/img/studio/studio-9404.jpg 1170w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Học viên tập trung vẽ bên cửa sổ" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-7d3c.jpg" data-caption="Hai bạn khoe tranh vừa hoàn thành trước bức tường tranh của studio"><img src="assets/img/studio/studio-7d3c-t.jpg" srcset="assets/img/studio/studio-7d3c-t.jpg 760w, assets/img/studio/studio-7d3c.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Hai bạn khoe tranh vừa hoàn thành trước bức tường tranh của studio" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-8516.jpg" data-caption="Giáo viên hướng dẫn học viên trong buổi workshop buổi tối"><img src="assets/img/studio/studio-8516-t.jpg" srcset="assets/img/studio/studio-8516-t.jpg 760w, assets/img/studio/studio-8516.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Giáo viên hướng dẫn học viên trong buổi workshop buổi tối" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-3655.jpg" data-caption="Hai người cùng vẽ bên cửa sổ nhìn ra hàng cây"><img src="assets/img/studio/studio-3655-t.jpg" srcset="assets/img/studio/studio-3655-t.jpg 760w, assets/img/studio/studio-3655.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Hai người cùng vẽ bên cửa sổ nhìn ra hàng cây" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-5119.jpg" data-caption="Học viên cười tươi bên giá vẽ"><img src="assets/img/studio/studio-5119-t.jpg" srcset="assets/img/studio/studio-5119-t.jpg 760w, assets/img/studio/studio-5119.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Học viên cười tươi bên giá vẽ" loading="lazy" decoding="async"></a>
-      <a href="assets/img/studio/studio-2805.jpg" data-caption="Học viên đứng cạnh bức tranh núi và hoa vừa vẽ"><img src="assets/img/studio/studio-2805-t.jpg" srcset="assets/img/studio/studio-2805-t.jpg 760w, assets/img/studio/studio-2805.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Học viên đứng cạnh bức tranh núi và hoa vừa vẽ" loading="lazy" decoding="async"></a>
+<section class="page-head">
+  <div class="container page-head-grid">
+    <div class="page-head-copy">
+      <p class="label">Trải nghiệm</p>
+      <h1 class="page-title">Workshop</h1>
+      <p class="page-sub">Cầm cọ lên và vẽ một điều gì đó bằng chính đôi tay mình</p>
+      
+      <ul class="jumps"><li class="jumps-lead"><a class="btn btn--primary" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Đặt lịch workshop</span></a></li><li><a href="#tai-studio"><span>Tại studio</span><svg class="icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6.5 13.5 12 19l5.5-5.5"/></svg></a></li><li><a href="#doanh-nghiep"><span>Doanh nghiệp</span><svg class="icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6.5 13.5 12 19l5.5-5.5"/></svg></a></li></ul>
+    </div>
+    <div class="head-media has-inset">
+      <div class="arch head-arch"><img src="assets/img/studio/studio-1546-t.jpg" srcset="assets/img/studio/studio-1546-t.jpg 760w, assets/img/studio/studio-1546.jpg 1087w" sizes="(max-width: 900px) 62vw, 400px" width="760" height="1119" alt="Học viên cười rạng rỡ bên bức tranh trăng đêm vừa hoàn thành" fetchpriority="high" decoding="async" style="object-position:50% 30%"></div>
+      <div class="head-inset"><span class="inset-clip"><img src="assets/img/doanh-nghiep/dn-3268-t.jpg" srcset="assets/img/doanh-nghiep/dn-3268-t.jpg 760w, assets/img/doanh-nghiep/dn-3268.jpg 1600w" sizes="(max-width: 900px) 34vw, 190px" width="760" height="507" alt="Bàn dài bày sẵn giá vẽ và toan trắng trước giờ workshop" loading="lazy" decoding="async" style="object-position:44% 60%"></span></div>
     </div>
   </div>
 </section>
 
-<section class="block" id="doanh-nghiep">
+<section class="section split-section" id="tai-studio">
   <div class="container">
-    <div class="block-head"><h2 class="h-section">Workshop doanh nghiệp</h2><svg class="ornament" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1"/></svg></div>
-    <div class="block-intro"><!-- NHÁP: đoạn mô tả do Claude viết dựa trên ảnh — cần Tưm duyệt/sửa -->
-    <p>Tưm mang không gian vẽ tranh thư giãn đến văn phòng, sự kiện hay buổi gắn kết của doanh nghiệp. Mỗi người hoàn thành một bức tranh của riêng mình và cùng đồng nghiệp lưu lại một kỷ niệm đẹp.</p></div>
-    <div class="gallery" data-gallery>
-      <a href="assets/img/doanh-nghiep/dn-3283.jpg" data-caption="Ảnh tập thể khoe tranh sau buổi workshop doanh nghiệp"><img src="assets/img/doanh-nghiep/dn-3283-t.jpg" srcset="assets/img/doanh-nghiep/dn-3283-t.jpg 760w, assets/img/doanh-nghiep/dn-3283.jpg 1600w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="507" alt="Ảnh tập thể khoe tranh sau buổi workshop doanh nghiệp" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-0535.jpg" data-caption="Workshop đông người tại văn phòng trang trí cờ đỏ sao vàng"><img src="assets/img/doanh-nghiep/dn-0535-t.jpg" srcset="assets/img/doanh-nghiep/dn-0535-t.jpg 760w, assets/img/doanh-nghiep/dn-0535.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Workshop đông người tại văn phòng trang trí cờ đỏ sao vàng" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-3271.jpg" data-caption="Nhân viên vẽ tranh bên cửa kính nhìn ra núi"><img src="assets/img/doanh-nghiep/dn-3271-t.jpg" srcset="assets/img/doanh-nghiep/dn-3271-t.jpg 760w, assets/img/doanh-nghiep/dn-3271.jpg 1600w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="507" alt="Nhân viên vẽ tranh bên cửa kính nhìn ra núi" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-5015.jpg" data-caption="Giá vẽ, toan và bình hoa chuẩn bị cho workshop"><img src="assets/img/doanh-nghiep/dn-5015-t.jpg" srcset="assets/img/doanh-nghiep/dn-5015-t.jpg 760w, assets/img/doanh-nghiep/dn-5015.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Giá vẽ, toan và bình hoa chuẩn bị cho workshop" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-2890.jpg" data-caption="Workshop vẽ tranh tại văn phòng doanh nghiệp"><img src="assets/img/doanh-nghiep/dn-2890-t.jpg" srcset="assets/img/doanh-nghiep/dn-2890-t.jpg 760w, assets/img/doanh-nghiep/dn-2890.jpg 1600w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="570" alt="Workshop vẽ tranh tại văn phòng doanh nghiệp" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-4867.jpg" data-caption="Học viên vẽ tranh trong không gian nhiều cây xanh"><img src="assets/img/doanh-nghiep/dn-4867-t.jpg" srcset="assets/img/doanh-nghiep/dn-4867-t.jpg 760w, assets/img/doanh-nghiep/dn-4867.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Học viên vẽ tranh trong không gian nhiều cây xanh" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-8471.jpg" data-caption="Workshop tại không gian sự kiện với ghế nhiều màu"><img src="assets/img/doanh-nghiep/dn-8471-t.jpg" srcset="assets/img/doanh-nghiep/dn-8471-t.jpg 760w, assets/img/doanh-nghiep/dn-8471.jpg 1600w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="570" alt="Workshop tại không gian sự kiện với ghế nhiều màu" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-5042.jpg" data-caption="Workshop vẽ tranh tại một văn phòng hiện đại"><img src="assets/img/doanh-nghiep/dn-5042-t.jpg" srcset="assets/img/doanh-nghiep/dn-5042-t.jpg 760w, assets/img/doanh-nghiep/dn-5042.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Workshop vẽ tranh tại một văn phòng hiện đại" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-3268.jpg" data-caption="Bàn dài bày sẵn giá vẽ và toan trắng trước giờ workshop"><img src="assets/img/doanh-nghiep/dn-3268-t.jpg" srcset="assets/img/doanh-nghiep/dn-3268-t.jpg 760w, assets/img/doanh-nghiep/dn-3268.jpg 1600w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="507" alt="Bàn dài bày sẵn giá vẽ và toan trắng trước giờ workshop" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-8489.jpg" data-caption="Nhân viên vẽ tranh tại sự kiện doanh nghiệp"><img src="assets/img/doanh-nghiep/dn-8489-t.jpg" srcset="assets/img/doanh-nghiep/dn-8489-t.jpg 760w, assets/img/doanh-nghiep/dn-8489.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Nhân viên vẽ tranh tại sự kiện doanh nghiệp" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-2865.jpg" data-caption="Nhân viên vẽ tranh trong không gian phong cách cổ điển"><img src="assets/img/doanh-nghiep/dn-2865-t.jpg" srcset="assets/img/doanh-nghiep/dn-2865-t.jpg 760w, assets/img/doanh-nghiep/dn-2865.jpg 1200w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="1013" alt="Nhân viên vẽ tranh trong không gian phong cách cổ điển" loading="lazy" decoding="async"></a>
-      <a href="assets/img/doanh-nghiep/dn-d3ed.jpg" data-caption="Workshop trong phòng họp với màn hình trình chiếu"><img src="assets/img/doanh-nghiep/dn-d3ed-t.jpg" srcset="assets/img/doanh-nghiep/dn-d3ed-t.jpg 760w, assets/img/doanh-nghiep/dn-d3ed.jpg 1600w" sizes="(max-width: 640px) 100vw, (max-width: 992px) 50vw, 380px" width="760" height="570" alt="Workshop trong phòng họp với màn hình trình chiếu" loading="lazy" decoding="async"></a>
+    <div class="split-head">
+      <div class="split-head-title">
+        <p class="label">01 · Tại studio</p>
+        <h2 class="h2">Workshop vẽ tranh tại studio</h2>
+      </div>
+      <div class="split-head-body">
+        <p class="lead-serif">Có thể bạn chỉ muốn ngồi xuống, cầm một cây cọ và thử vẽ một điều gì đó bằng chính đôi tay mình.</p>
+        <p>Ở đây, không nhất thiết phải có một bức tranh thật hoàn hảo. Đôi khi, điều đáng nhớ nhất lại là khoảng thời gian bạn đã dành cho chính mình trong lúc tạo nên nó.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Đặt lịch workshop</span></a></div>
+      </div>
+    </div>
+    <div class="mosaic" data-gallery>
+      <a class="tile tile--big" href="assets/img/studio/studio-5562.jpg" data-caption="Cả gia đình cùng vẽ một bức tranh lớn tại studio"><img src="assets/img/studio/studio-5562-t.jpg" srcset="assets/img/studio/studio-5562-t.jpg 760w, assets/img/studio/studio-5562.jpg 1200w" sizes="(max-width: 700px) 100vw, (max-width: 1240px) 50vw, 620px" width="760" height="1013" alt="Cả gia đình cùng vẽ một bức tranh lớn tại studio" loading="lazy" decoding="async" style="object-position:50% 45%"></a>
+      <a class="tile" href="assets/img/studio/studio-2817.jpg" data-caption="Hai bạn cùng khoe tranh sau buổi workshop"><img src="assets/img/studio/studio-2817-t.jpg" srcset="assets/img/studio/studio-2817-t.jpg 760w, assets/img/studio/studio-2817.jpg 1270w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="957" alt="Hai bạn cùng khoe tranh sau buổi workshop" loading="lazy" decoding="async"></a>
+      <a class="tile" href="assets/img/studio/studio-3747.jpg" data-caption="Học viên đang vẽ tranh bên cửa sổ studio"><img src="assets/img/studio/studio-3747-t.jpg" srcset="assets/img/studio/studio-3747-t.jpg 760w, assets/img/studio/studio-3747.jpg 1033w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1177" alt="Học viên đang vẽ tranh bên cửa sổ studio" loading="lazy" decoding="async"></a>
+      <a class="tile" href="assets/img/studio/studio-6629.jpg" data-caption="Giáo viên hướng dẫn học viên trong buổi workshop"><img src="assets/img/studio/studio-6629-t.jpg" srcset="assets/img/studio/studio-6629-t.jpg 760w, assets/img/studio/studio-6629.jpg 1200w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1013" alt="Giáo viên hướng dẫn học viên trong buổi workshop" loading="lazy" decoding="async"></a>
+      <a class="tile" href="assets/img/studio/studio-7d3c.jpg" data-caption="Hai bạn khoe tranh vừa hoàn thành trước bức tường tranh của studio"><img src="assets/img/studio/studio-7d3c-t.jpg" srcset="assets/img/studio/studio-7d3c-t.jpg 760w, assets/img/studio/studio-7d3c.jpg 1200w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1013" alt="Hai bạn khoe tranh vừa hoàn thành trước bức tường tranh của studio" loading="lazy" decoding="async" style="object-position:50% 40%"><span class="more" aria-hidden="true">+10 ảnh</span><span class="visually-hidden"> (xem thêm 10 ảnh)</span></a>
+      <a href="assets/img/studio/studio-1546.jpg" data-alt="Học viên cười rạng rỡ bên bức tranh trăng đêm vừa hoàn thành" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/studio/studio-7462.jpg" data-alt="Học viên ngắm bức tranh vừa vẽ bên khung cửa sổ" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/studio/studio-8311.jpg" data-alt="Học viên vẽ bức tranh hàng cây xanh trên giá vẽ lớn" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/studio/studio-b4f9.jpg" data-alt="Hai học viên tạo dáng vui vẻ sau buổi workshop" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/studio/studio-5666.jpg" data-alt="Bàn dài workshop với nhiều học viên đang vẽ" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/studio/studio-9404.jpg" data-alt="Học viên tập trung vẽ bên cửa sổ" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/studio/studio-8516.jpg" data-alt="Giáo viên hướng dẫn học viên trong buổi workshop buổi tối" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/studio/studio-3655.jpg" data-alt="Hai người cùng vẽ bên cửa sổ nhìn ra hàng cây" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/studio/studio-5119.jpg" data-alt="Học viên cười tươi bên giá vẽ" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/studio/studio-2805.jpg" data-alt="Học viên đứng cạnh bức tranh núi và hoa vừa vẽ" hidden tabindex="-1" aria-hidden="true"></a>
     </div>
   </div>
 </section>
 
-<section class="section section--line cta">
+<section class="section split-section band" id="doanh-nghiep">
   <div class="container">
-    <h2 class="h-section">Đặt lịch workshop</h2>
-    <svg class="ornament" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h46M74 7h46" stroke="currentColor" stroke-width="1"/><circle cx="60" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1"/></svg>
-    <p>Liên hệ Tưm để chọn ngày, số người và hình thức workshop phù hợp.</p>
-    <div class="btn-row">
-      <a class="btn btn--solid" href="tel:+84353297868">Gọi 0353 297 868</a>
-      <a class="btn" href="https://zalo.me/0353297868" target="_blank" rel="noopener">Nhắn Zalo</a>
+    <div class="split-head">
+      <div class="split-head-title">
+        <p class="label">02 · Doanh nghiệp</p>
+        <h2 class="h2">Workshop doanh nghiệp</h2>
+      </div>
+      <div class="split-head-body">
+        <!-- NHÁP: đoạn mô tả do Claude viết dựa trên ảnh — cần Tưm duyệt/sửa -->
+        <p class="lead-serif">Tưm mang không gian vẽ tranh thư giãn đến văn phòng, sự kiện hay buổi gắn kết của doanh nghiệp.</p>
+        <p>Mỗi người hoàn thành một bức tranh của riêng mình và cùng đồng nghiệp lưu lại một kỷ niệm đẹp.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Nhận tư vấn qua Zalo</span></a></div>
+      </div>
+    </div>
+    <div class="mosaic" data-gallery>
+      <a class="tile tile--wide" href="assets/img/doanh-nghiep/dn-3283.jpg" data-caption="Ảnh tập thể khoe tranh sau buổi workshop doanh nghiệp"><img src="assets/img/doanh-nghiep/dn-3283-t.jpg" srcset="assets/img/doanh-nghiep/dn-3283-t.jpg 760w, assets/img/doanh-nghiep/dn-3283.jpg 1600w" sizes="(max-width: 700px) 100vw, (max-width: 1240px) 50vw, 620px" width="760" height="507" alt="Ảnh tập thể khoe tranh sau buổi workshop doanh nghiệp" loading="lazy" decoding="async" style="object-position:50% 55%"></a>
+      <a class="tile" href="assets/img/doanh-nghiep/dn-0535.jpg" data-caption="Workshop đông người tại văn phòng trang trí cờ đỏ sao vàng"><img src="assets/img/doanh-nghiep/dn-0535-t.jpg" srcset="assets/img/doanh-nghiep/dn-0535-t.jpg 760w, assets/img/doanh-nghiep/dn-0535.jpg 1200w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1013" alt="Workshop đông người tại văn phòng trang trí cờ đỏ sao vàng" loading="lazy" decoding="async"></a>
+      <a class="tile" href="assets/img/doanh-nghiep/dn-4867.jpg" data-caption="Học viên vẽ tranh trong không gian nhiều cây xanh"><img src="assets/img/doanh-nghiep/dn-4867-t.jpg" srcset="assets/img/doanh-nghiep/dn-4867-t.jpg 760w, assets/img/doanh-nghiep/dn-4867.jpg 1200w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1013" alt="Học viên vẽ tranh trong không gian nhiều cây xanh" loading="lazy" decoding="async"></a>
+      <a class="tile" href="assets/img/doanh-nghiep/dn-5042.jpg" data-caption="Workshop vẽ tranh tại một văn phòng hiện đại"><img src="assets/img/doanh-nghiep/dn-5042-t.jpg" srcset="assets/img/doanh-nghiep/dn-5042-t.jpg 760w, assets/img/doanh-nghiep/dn-5042.jpg 1200w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1013" alt="Workshop vẽ tranh tại một văn phòng hiện đại" loading="lazy" decoding="async"></a>
+      <a class="tile" href="assets/img/doanh-nghiep/dn-8489.jpg" data-caption="Nhân viên vẽ tranh tại sự kiện doanh nghiệp"><img src="assets/img/doanh-nghiep/dn-8489-t.jpg" srcset="assets/img/doanh-nghiep/dn-8489-t.jpg 760w, assets/img/doanh-nghiep/dn-8489.jpg 1200w" sizes="(max-width: 700px) 50vw, (max-width: 1240px) 25vw, 300px" width="760" height="1013" alt="Nhân viên vẽ tranh tại sự kiện doanh nghiệp" loading="lazy" decoding="async"></a>
+      <a class="tile tile--wide" href="assets/img/doanh-nghiep/dn-8471.jpg" data-caption="Workshop tại không gian sự kiện với ghế nhiều màu"><img src="assets/img/doanh-nghiep/dn-8471-t.jpg" srcset="assets/img/doanh-nghiep/dn-8471-t.jpg 760w, assets/img/doanh-nghiep/dn-8471.jpg 1600w" sizes="(max-width: 700px) 100vw, (max-width: 1240px) 50vw, 620px" width="760" height="570" alt="Workshop tại không gian sự kiện với ghế nhiều màu" loading="lazy" decoding="async" style="object-position:50% 50%"><span class="more" aria-hidden="true">+6 ảnh</span><span class="visually-hidden"> (xem thêm 6 ảnh)</span></a>
+      <a href="assets/img/doanh-nghiep/dn-3271.jpg" data-alt="Nhân viên vẽ tranh bên cửa kính nhìn ra núi" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/doanh-nghiep/dn-5015.jpg" data-alt="Giá vẽ, toan và bình hoa chuẩn bị cho workshop" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/doanh-nghiep/dn-2890.jpg" data-alt="Workshop vẽ tranh tại văn phòng doanh nghiệp" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/doanh-nghiep/dn-3268.jpg" data-alt="Bàn dài bày sẵn giá vẽ và toan trắng trước giờ workshop" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/doanh-nghiep/dn-2865.jpg" data-alt="Nhân viên vẽ tranh trong không gian phong cách cổ điển" hidden tabindex="-1" aria-hidden="true"></a>
+      <a href="assets/img/doanh-nghiep/dn-d3ed.jpg" data-alt="Workshop trong phòng họp với màn hình trình chiếu" hidden tabindex="-1" aria-hidden="true"></a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" aria-labelledby="cta-title">
+  <div class="container cta-grid">
+    <div class="cta-copy">
+      <p class="label label--light">Liên hệ với Tưm</p>
+      <h2 class="cta-title" id="cta-title">Đặt lịch workshop</h2>
+      <p class="cta-text">Liên hệ Tưm để chọn ngày, số người và hình thức workshop phù hợp.</p>
+      <div class="btn-row">
+        <a class="btn btn--light btn--lg" href="tel:+84353297868"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.5 4.1-1.9 1.3a11.5 11.5 0 0 0 6.3 6.3l1.3-1.9 4.1 1.5v2.6a1.8 1.8 0 0 1-1.9 1.8A16.2 16.2 0 0 1 4.8 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><span>Gọi 0353 297 868</span></a>
+        <a class="btn btn--outline-light btn--lg" href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Nhắn Zalo</span></a>
+      </div>
+    </div>
+    <div class="cta-media" aria-hidden="true">
+      <div class="arch cta-arch"><img src="assets/img/studio/studio-b4f9-t.jpg" srcset="assets/img/studio/studio-b4f9-t.jpg 760w, assets/img/studio/studio-b4f9.jpg 1067w" sizes="(max-width: 900px) 40vw, 320px" width="760" height="1139" alt="" loading="lazy" decoding="async" style="object-position:50% 30%"></div>
     </div>
   </div>
 </section>
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p class="footer-logo"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio" loading="lazy" decoding="async"></p>
-    <p>Trích Sài, Tây Hồ, Hà Nội · <a href="tel:+84353297868">0353 297 868</a> · <a href="mailto:tumbuiartist@gmail.com">tumbuiartist@gmail.com</a></p>
-    <ul class="social"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener">Instagram</a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener">Facebook</a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener">Zalo</a></li></ul>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="footer-logo" href="index.html"><img src="assets/img/logo/tum-logo.svg" width="626" height="394" alt="TUM Art Studio" loading="lazy" decoding="async"></a>
+      <p class="footer-tagline">Tranh · Workshop · Lớp học vẽ</p>
+      <p class="footer-addr"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.7-6.5-11a6.5 6.5 0 0 1 13 0c0 5.3-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span>Trích Sài, Tây Hồ, Hà Nội</span></p>
+    </div>
+    <div class="footer-col footer-col--nav">
+      <p class="footer-title">Khám phá</p>
+      <ul class="footer-links footer-links--2">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="tranh.html">Tranh</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="khoa-hoc.html">Khoá học</a></li>
+          <li><a href="doi-tac.html">Đối tác</a></li>
+          <li><a href="ve-tum.html">Về Tưm</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-col--contact">
+      <p class="footer-title">Liên hệ</p>
+      <ul class="footer-links">
+        <li><a href="tel:+84353297868"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3.5h2.6l1.5 4.1-1.9 1.3a11.5 11.5 0 0 0 6.3 6.3l1.3-1.9 4.1 1.5v2.6a1.8 1.8 0 0 1-1.9 1.8A16.2 16.2 0 0 1 4.8 5.4a1.8 1.8 0 0 1 1.8-1.9z"/></svg><span>0353 297 868</span></a></li>
+        <li><a href="mailto:tumbuiartist@gmail.com"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="m4.5 7.5 7.5 5.5 7.5-5.5"/></svg><span>tumbuiartist@gmail.com</span></a></li>
+      </ul>
+    </div>
+    <div class="footer-col footer-col--social">
+      <p class="footer-title">Theo dõi Tưm</p>
+      <ul class="social social--footer"><li><a href="https://www.instagram.com/tum.artstudio/" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.8" cy="7.2" r=".9" fill="currentColor" stroke="none"/></svg><span>Instagram</span></a></li><!-- TẠM: kiểm tra lại link Facebook --><li><a href="https://www.facebook.com/TUM.Artstudio" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 20v-7h2.4l.4-2.8h-2.8V8.6c0-.8.3-1.4 1.4-1.4h1.5V4.7c-.3 0-1.1-.1-2.1-.1-2.1 0-3.6 1.3-3.6 3.7v1.9h-2.4V13h2.4v7"/></svg><span>Facebook</span></a></li><!-- TẠM: kiểm tra lại link TikTok --><li><a href="https://www.tiktok.com/@tum.artstudio" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 4v10.5a3 3 0 1 1-3-3"/><path d="M13.5 4c.3 2.3 1.9 3.9 4.5 4.1"/></svg><span>TikTok</span></a></li><li><a href="https://zalo.me/0353297868" target="_blank" rel="noopener"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5c0 4-3.6 7-8 7-1.1 0-2.2-.2-3.1-.5l-4.4 1.5 1.2-3.4A6.7 6.7 0 0 1 4 11.5c0-4 3.6-7 8-7s8 3 8 7z"/></svg><span>Zalo</span></a></li></ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
     <p class="copy">© <span data-year>2026</span> TUM.Artstudio</p>
+    <p class="footer-top"><a href="#main">Lên đầu trang <svg class="icon icon--up" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6.5 13.5 12 19l5.5-5.5"/></svg></a></p>
   </div>
 </footer>
 
