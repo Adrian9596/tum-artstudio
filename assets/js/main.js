@@ -1,5 +1,7 @@
-/* TUM.Artstudio — header dính, menu điện thoại, slideshow (nếu có), xem ảnh lớn (lightbox).
-   Không dùng thư viện ngoài. Khi tắt JavaScript, trang vẫn đọc và bấm link được. */
+/* TUM.Artstudio — header dính, menu điện thoại, ảnh hiện dần khi cuộn tới,
+   slideshow (nếu có), xem ảnh lớn (lightbox).
+   Không dùng thư viện ngoài. Khi tắt JavaScript, trang vẫn đọc và bấm link được
+   (hiệu ứng hiện dần chỉ bật khi <html> có class "js", gắn bằng dòng script nhỏ trong <head>). */
 (function () {
   'use strict';
 
@@ -13,6 +15,45 @@
   document.querySelectorAll('[data-year]').forEach(function (el) {
     el.textContent = new Date().getFullYear();
   });
+
+  /* ---------- Ảnh tải xong thì hiện mềm ---------- */
+  document.querySelectorAll('img[loading="lazy"]').forEach(function (img) {
+    if (img.complete && img.naturalWidth) return;   // đã có sẵn trong bộ nhớ đệm: để nguyên
+    img.classList.add('fade-in');
+    var done = function () { img.classList.add('is-loaded'); };
+    img.addEventListener('load', done, { once: true });
+    img.addEventListener('error', done, { once: true });
+  });
+
+  /* ---------- Hiện dần các khối khi cuộn tới ---------- */
+  var REVEAL = [
+    '.hero-copy', '.hero-media', '.page-head-copy', '.head-media', '.course-index',
+    '.section-head', '.split-head', '.moments-head', '.rule-title', '.quote',
+    '.about-copy', '.about-aside', '.service', '.moment', '.tile', '.frame',
+    '.story-intro-grid > *', '.chapter-media', '.chapter .prose',
+    '.course-top', '.course-intro', '.course-cols > *', '.kid-card', '.panel--timeline',
+    '.contact-item', '.closing', '.cta-copy', '.cta-media', '.footer-grid > *'
+  ].join(',');
+  var revealEls = Array.prototype.slice.call(document.querySelectorAll(REVEAL));
+  revealEls.forEach(function (el) {
+    el.setAttribute('data-reveal', '');
+    // Các khối cùng hàng hiện lần lượt, cách nhau một chút
+    var i = 0, prev = el.previousElementSibling;
+    while (prev && i < 5) { if (prev.hasAttribute('data-reveal')) i++; prev = prev.previousElementSibling; }
+    if (i) el.style.setProperty('--d', (i * 0.08).toFixed(2) + 's');
+  });
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        en.target.classList.add('is-in');
+        io.unobserve(en.target);
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.06 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('is-in'); });
+  }
 
   /* ---------- Header: thêm bóng nhẹ khi cuộn xuống ---------- */
   var header = document.querySelector('[data-header]');
@@ -221,6 +262,8 @@
   function show(i) {
     index = (i + items.length) % items.length;
     var it = items[index];
+    lbImg.classList.add('is-loading');
+    lbImg.onload = lbImg.onerror = function () { lbImg.classList.remove('is-loading'); };
     lbImg.src = it.href;
     lbImg.alt = it.alt;
     lbCap.textContent = it.caption;
